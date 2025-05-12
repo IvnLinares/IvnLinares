@@ -26,7 +26,7 @@ header p {
 }
 
 header .subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #bbb;
     margin-top: 0.5rem;
 }
@@ -64,6 +64,7 @@ main {
     padding: 2rem;
     background: #f4f4f9;
     margin-bottom: 2rem;
+    border-radius: 8px;
 }
 
 h2 {
@@ -125,6 +126,10 @@ h2 {
     max-width: 100%;
     border-radius: 8px;
     margin-bottom: 1rem;
+}
+
+.card img {
+    border-radius: 8px 8px 0 0;
 }
 
 footer {
