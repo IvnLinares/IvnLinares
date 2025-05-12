@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Mi primera publicación",
+        "date": "2023-10-01",
+        "content": "Esta es mi primera publicación en el blog. ¡Bienvenidos!"
+    },
+    {
+        "title": "Explorando el desarrollo web",
+        "date": "2023-10-05",
+        "content": "Hoy quiero compartir mi experiencia aprendiendo desarrollo web fullstack."
+    },
+    {
+        "title": "La importancia del diseño UI/UX",
+        "date": "2023-10-10",
+        "content": "El diseño UI/UX es clave para crear aplicaciones atractivas y funcionales."
+    }
+]
