@@ -31,7 +31,7 @@ Visita mi [blog](https://ivnlinares.github.io/IvnLinares/) para leer sobre mis e
 
 ## 📫 Contacto
 
-- **Correo:** [tuemail@example.com](mailto:tuemail@example.com)
+- **Correo:** [linaresivn@gmail.com](mailto:linaresivn@gmail.com)
 - **Instagram:** [@ivnlinares](https://www.instagram.com/ivnlinares)
 - **GitHub:** [IvnLinares](https://github.com/IvnLinares)
 - **Spotify:** [ivn.linares](https://open.spotify.com/user/ivn.linares)
