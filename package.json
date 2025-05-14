@@ -1,0 +1,22 @@
+{
+  "name": "ivnlinares",
+  "version": "1.0.0",
+  "description": "ivnlinares personal website and portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvnLinares/IvnLinares.git"
+  },
+  "author": "IvnLinares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvnLinares/IvnLinares/issues"
+  },
+  "homepage": "https://github.com/IvnLinares/IvnLinares#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.6"
+  }
+}
