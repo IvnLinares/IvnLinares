@@ -1,21 +1,23 @@
 <template>
-  <div>
+  <div :class="{ 'dark-mode': isDarkMode }">
     <main>
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <div class="container text-center">
-          <div class="hero-content">
-            <h1 class="display-1 fw-bold">Ivan Linares</h1>
-            <p class="fst-italic hero-subtitle">SEMPER PARATUS SERVIRE</p>
-            <p class="lead hero-tagline">Scouting & Tech</p>
-            <a href="#about" class="btn btn-primary mt-3">Learn More</a>
+      <section id="intro" class="intro-section py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+              <h1 class="intro-title">Ivan Linares</h1>
+              <p class="intro-tagline">Semper Paratus Servire</p>
+              <p class="intro-subtitle">Scouts & Tech</p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img :src="ivnDraw" alt="Ivan Linares Illustration" class="intro-illustration" />
+            </div>
           </div>
-          <img :src="ivnDraw" alt="Ivan Linares" class="hero-illustration mt-4" />
         </div>
       </section>
       <section id="welcome" class="text-center py-5">
         <div class="container">
-          <h2 class="h1 mb-4">Que ondas vicho!</h2>
+          <h2 class="h1 mb-4">¡Que ondas!</h2>
           <p class="lead">
             Hi Cipote, I'm Ivan Linares, a creative soul, Scout, designer, and developer. I love bringing ideas to
             life—whether it's through thoughtful design, meaningful digital projects, or community-driven Scout
@@ -28,6 +30,9 @@
         <h2 class="h2 mb-4">Contact</h2>
         <p class="mb-4">You can reach me at:</p>
         <div class="contact-buttons d-flex justify-content-center flex-wrap gap-3">
+          <a href="mailto:linaresivn@gmail.com" class="btn-email" target="_blank">
+            <i class="fas fa-envelope"></i> Email
+          </a>
           <a href="https://www.instagram.com/ivn.linares" class="btn-instagram" target="_blank">
             <i class="fab fa-instagram"></i> Instagram
           </a>
@@ -43,15 +48,6 @@
           <a href="https://buymeacoffee.com/ivnlinares" class="btn-coffee" target="_blank">
             <i class="fas fa-coffee"></i> Buy Me a Coffee
           </a>
-        </div>
-      </section>
-      <section id="about" class="py-5">
-        <div class="container">
-          <h2 class="h2 mb-4 text-center">About Me</h2>
-          <p class="text-center">
-            Hi, I'm Ivan, a Scout passionate about technology, music, and photography. I specialize in full-stack
-            development focused on web development and enjoy creating content for social media.
-          </p>
         </div>
       </section>
       <section id="interests" class="py-5">
@@ -88,6 +84,123 @@
           </div>
         </div>
       </section>
+      <section id="projects" class="py-5">
+        <div class="container">
+          <h2 class="h2 mb-4 text-center">Featured Projects</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card project-card shadow-sm text-center">
+                <div class="card-icon my-4">
+                  <i class="fas fa-code fa-4x text-primary"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Project 1</h5>
+                  <p class="card-text">Description of the project.</p>
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+            </div>
+            <!-- Repeat for more projects -->
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="py-5">
+        <div class="container">
+          <h2 class="h2 mb-4 text-center">Skills & Tools</h2>
+          <div class="row text-center">
+            <div class="col-md-3 skill-card">
+              <i class="fab fa-html5 fa-3x text-danger"></i>
+              <p class="mt-2">HTML5</p>
+            </div>
+            <div class="col-md-3 skill-card">
+              <i class="fab fa-css3-alt fa-3x text-primary"></i>
+              <p class="mt-2">CSS3</p>
+            </div>
+            <div class="col-md-3 skill-card">
+              <i class="fab fa-js fa-3x text-warning"></i>
+              <p class="mt-2">JavaScript</p>
+            </div>
+            <div class="col-md-3 skill-card">
+              <i class="fab fa-vuejs fa-3x text-success"></i>
+              <p class="mt-2">Vue.js</p>
+            </div>
+          </div>
+          <div class="row text-center mt-4">
+            <div class="col-md-3 skill-card">
+              <i class="fas fa-database fa-3x text-info"></i>
+              <p class="mt-2">SQL & NoSQL Databases</p>
+            </div>
+            <div class="col-md-3 skill-card">
+              <i class="fab fa-node-js fa-3x text-success"></i>
+              <p class="mt-2">Node.js</p>
+            </div>
+            <div class="col-md-3 skill-card">
+              <i class="fas fa-code fa-3x text-secondary"></i>
+              <p class="mt-2">MERN Stack</p>
+            </div>
+            <div class="col-md-3 skill-card">
+              <i class="fas fa-laptop-code fa-3x text-dark"></i>
+              <p class="mt-2">Django</p>
+            </div>
+          </div>
+          <div class="row text-center mt-4">
+            <div class="col-md-3 skill-card">
+              <i class="fab fa-git-alt fa-3x text-danger"></i>
+              <p class="mt-2">GIT/GitHub</p>
+            </div>
+            <div class="col-md-3 skill-card">
+              <i class="fas fa-paint-brush fa-3x text-primary"></i>
+              <p class="mt-2">Graphic Design</p>
+            </div>
+            <div class="col-md-3 skill-card">
+              <i class="fas fa-tools fa-3x text-warning"></i>
+              <p class="mt-2">Troubleshooting</p>
+            </div>
+            <div class="col-md-3 skill-card">
+              <i class="fas fa-users fa-3x text-info"></i>
+              <p class="mt-2">Leadership & Teamwork</p>
+            </div>
+          </div>
+          <div class="row text-center mt-4">
+            <div class="col-md-3 skill-card">
+              <i class="fas fa-cogs fa-3x text-secondary"></i>
+              <p class="mt-2">Office 365 Administration</p>
+            </div>
+            <div class="col-md-3 skill-card">
+              <i class="fas fa-brain fa-3x text-success"></i>
+              <p class="mt-2">Creativity</p>
+            </div>
+            <div class="col-md-3 skill-card">
+              <i class="fas fa-clock fa-3x text-danger"></i>
+              <p class="mt-2">Organization & Time Management</p>
+            </div>
+            <div class="col-md-3 skill-card">
+              <i class="fas fa-code-branch fa-3x text-dark"></i>
+              <p class="mt-2">C++, C#, JAVA</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="py-5">
+        <div class="container">
+          <h2 class="h2 mb-4 text-center">About Me</h2>
+          <p class="text-center">
+            Hi, I'm Ivan, a Scout passionate about technology, music, and photography. I specialize in full-stack
+            development focused on web development and enjoy creating content for social media.
+          </p>
+        </div>
+      </section>
+     
+      <footer class="footer py-4">
+        <div class="container text-center">
+          <p>&copy; 2023 Ivan Linares. All rights reserved.</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/ivn.linares" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/IvnLinares" target="_blank"><i class="fab fa-github"></i></a>
+            <!-- Add more social links -->
+          </div>
+        </div>
+      </footer>
     </main>
   </div>
 </template>
@@ -98,12 +211,148 @@ import ivnDraw from '../../assets/SVG/ivnDraw.svg'; // Ruta relativa directa
 export default {
   data() {
     return {
-      ivnDraw
+      ivnDraw,
+      isDarkMode: false, // Cambiar dinámicamente según el modo
     };
-  }
+  },
+  mounted() {
+    // Detectar el modo oscuro del sistema
+    this.isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  },
 };
 </script>
 
 <style>
-/* Estilos específicos para HomeView */
+/* Intro Section Styles */
+.intro-section {
+  background: linear-gradient(135deg, #d4a5ff, #b19cd9);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  color: #ffffff;
+}
+
+.dark-mode .intro-section {
+  background: linear-gradient(135deg, #9b6bcc, #7a5a9e);
+}
+
+.intro-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.intro-tagline {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.intro-subtitle {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #f3e5f5;
+}
+
+.intro-illustration {
+  max-width: 60%;
+  bottom: 0;
+  height: auto;
+}
+
+.project-card {
+  border: none;
+}
+
+.project-card .card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.project-card .card-icon i {
+  font-size: 4rem;
+}
+
+@media (min-width: 768px) {
+  .intro-title {
+    font-size: 4rem;
+  }
+
+  .intro-tagline {
+    font-size: 1.75rem;
+  }
+
+  .intro-subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background: #333;
+  color: #fff;
+}
+
+.footer .social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* Skills Section Styles */
+.skill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations for other elements */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card .card-icon i {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover .card-icon i {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+/* Email Button Styles */
+.btn-email {
+  color: #d44638;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.btn-email:hover {
+  color: #a8322a;
+}
 </style>
