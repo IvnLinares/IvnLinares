@@ -1,8 +1,12 @@
 <template>
   <header>
-    <nav :class="['navbar navbar-expand-lg', isDarkMode ? 'navbar-dark' : 'navbar-light']">
+    <nav :class="['navbar navbar-expand-lg', isDarkMode ? 'navbar-dark bg-dark' : 'navbar-light bg-light']">
       <div class="container">
-        <a class="navbar-brand fw-bold text-uppercase" href="#">
+        <a
+          class="navbar-brand fw-bold text-uppercase"
+          href="#"
+          :style="{ color: isDarkMode ? '#ffffff' : '#000000' }"
+        >
           <i class="fas fa-compass"></i> IvnLinares
         </a>
         <button
@@ -75,7 +79,7 @@ export default {
 <style>
 /* Estilos específicos para NavBar */
 .navbar {
-  background: linear-gradient(90deg, #4f46e5, #3b82f6);
+  background: linear-gradient(90deg, #f9f9fb, #ffffff);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   padding: 1rem 0;
@@ -122,5 +126,43 @@ export default {
 .navbar-toggler:hover {
   background-color: #facc15;
   color: #ffffff;
+}
+
+/* Light mode navbar styles */
+.navbar-light {
+  background-color: #ffffff !important;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-light .navbar-brand {
+  color: #000000 !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-light .nav-link {
+  color: #000000 !important;
+}
+
+.navbar-light .nav-link:hover {
+  color: #555555 !important;
+}
+
+/* Dark mode navbar styles */
+.navbar-dark {
+  background-color: #1e1e1e !important;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-dark .navbar-brand {
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-dark .nav-link {
+  color: #e0e0e0 !important;
+}
+
+.navbar-dark .nav-link:hover {
+  color: #ffffff !important;
 }
 </style>

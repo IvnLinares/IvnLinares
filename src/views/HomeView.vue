@@ -1,7 +1,7 @@
 <template>
   <div :class="{ 'dark-mode': isDarkMode }">
     <main>
-      <section id="intro" class="intro-section py-5">
+      <section id="intro" class="intro-section">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6 text-center text-md-start">
@@ -190,17 +190,6 @@
           </p>
         </div>
       </section>
-     
-      <footer class="footer py-4">
-        <div class="container text-center">
-          <p>&copy; 2023 Ivan Linares. All rights reserved.</p>
-          <div class="social-icons">
-            <a href="https://www.instagram.com/ivn.linares" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/IvnLinares" target="_blank"><i class="fab fa-github"></i></a>
-            <!-- Add more social links -->
-          </div>
-        </div>
-      </footer>
     </main>
   </div>
 </template>
@@ -225,21 +214,20 @@ export default {
 <style>
 /* Intro Section Styles */
 .intro-section {
-  background: linear-gradient(135deg, #d4a5ff, #b19cd9);
-  background-size: 400% 400%;
+  background: linear-gradient(135deg, #c84141, #e6dcf3);
   animation: gradientAnimation 10s ease infinite;
   color: #ffffff;
 }
 
 .dark-mode .intro-section {
-  background: linear-gradient(135deg, #9b6bcc, #7a5a9e);
+  background: linear-gradient(135deg, #230b58, #c870cb);
 }
 
 .intro-title {
   font-family: 'Dancing Script', cursive;
-  font-size: 3rem;
+  margin-top: 15px;
+  font-size: 5rem;
   font-weight: bold;
-  margin-bottom: 1rem;
 }
 
 .intro-tagline {
@@ -254,9 +242,15 @@ export default {
 }
 
 .intro-illustration {
-  max-width: 60%;
+  max-width: 40%;
   bottom: 0;
+  margin-top: 50px;
   height: auto;
+}
+
+.intro-illustration:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .project-card {
@@ -322,7 +316,6 @@ export default {
 
 .skill-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Animations for other elements */
@@ -346,13 +339,107 @@ export default {
 
 /* Email Button Styles */
 .btn-email {
-  color: #d44638;
+  color: #ffffff;
+  background-color: #d44638; /* Fondo claro para modo claro */
+  padding: 10px 20px;
+  border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-email:hover {
-  color: #a8322a;
+  color: #ffffff;
+  background-color: #a8322a; /* Fondo más oscuro al pasar el mouse */
+}
+
+/* Ajuste para modo oscuro */
+.dark-mode .btn-email {
+  background-color: #333; /* Fondo oscuro para modo oscuro */
+  color: #d44638;
+}
+
+.dark-mode .btn-email:hover {
+  background-color: #a8322a;
+  color: #ffffff;
+}
+
+/* Contact Section Styles */
+.contact-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  justify-content: center;
+}
+
+.contact-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-buttons a:hover {
+  transform: scale(1.05);
+}
+
+/* Specific button styles */
+.btn-email {
+  background-color: #d44638;
+  color: #ffffff;
+}
+
+.btn-instagram {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+.btn-github {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.btn-spotify {
+  background-color: #1db954;
+  color: #ffffff;
+}
+
+.btn-twitter {
+  background-color: #1da1f2;
+  color: #ffffff;
+}
+
+.btn-coffee {
+  background-color: #ffdd00;
+  color: #000000;
+}
+
+/* Adjustments for hover effects */
+.btn-email:hover {
+  background-color: #a8322a;
+}
+
+.btn-instagram:hover {
+  background-color: #c32f6b;
+}
+
+.btn-github:hover {
+  background-color: #24292e;
+}
+
+.btn-spotify:hover {
+  background-color: #1aa34a;
+}
+
+.btn-twitter:hover {
+  background-color: #1991da;
+}
+
+.btn-coffee:hover {
+  background-color: #e6c200;
 }
 </style>
