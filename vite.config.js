@@ -4,7 +4,7 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/<REPO_NAME>/', // Reemplaza <REPO_NAME> con el nombre de tu repositorio
+  base: '/IvnLinares/', // Reemplaza "IvnLinares" con el nombre exacto de tu repositorio
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
