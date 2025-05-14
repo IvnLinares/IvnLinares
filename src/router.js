@@ -12,7 +12,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHashHistory(), // Usa createWebHashHistory para evitar problemas en GitHub Pages
   routes
 });
 
