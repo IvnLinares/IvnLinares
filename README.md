@@ -54,7 +54,7 @@ I'm a passionate **Scout** who loves technology, music, and photography. I speci
 
 ## 📖 Blog
 
-Visit my [blog](https://ivnlinares.github.io/IvnLinares-blog/#/) to read about my experiences and learnings in web development, UI/UX design, and more.
+Visit my [blog](https://ivnlinares.com/) to read about my experiences and learnings in web development, UI/UX design, and more.
 
 ---
 
