@@ -1,8 +1,4 @@
 <p align="center">
-  <img src="assets/SVG/ivnDraw.svg" alt="Ivan Linares Avatar" width="180"/>
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/github/followers/IvnLinares?label=GitHub%20Followers&logo=github&style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Scout-Creative%20Leader-green?style=for-the-badge&logo=tree&logoColor=white"/>
   <img src="https://img.shields.io/badge/Fullstack%20Dev-JS%20|%20Python%20|%20Vue%20|%20React-blueviolet?style=for-the-badge&logo=code&logoColor=white"/>
